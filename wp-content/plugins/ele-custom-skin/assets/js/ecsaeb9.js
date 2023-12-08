@@ -1,14 +1,1 @@
-
-var ECS_hooks = {};
-
-var ECS_Columns_Count=0;
-
-function ECS_add_action(name, func) {
-  if(!ECS_hooks[name]) ECS_hooks[name] = [];
-  ECS_hooks[name].push(func);
-}
-
-function ECS_do_action(name, ...params){
-  if(ECS_hooks[name]) 
-     ECS_hooks[name].forEach(func => func(...params));
-}
+var ECS_hooks={},ECS_Columns_Count=0;function ECS_add_action(o,C){ECS_hooks[o]||(ECS_hooks[o]=[]),ECS_hooks[o].push(C)}function ECS_do_action(o,...C){ECS_hooks[o]&&ECS_hooks[o].forEach(o=>o(...C))}
