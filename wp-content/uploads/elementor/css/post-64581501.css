@@ -1489,7 +1489,7 @@ body:not(.rtl) .elementor-6458 .elementor-element.elementor-element-18273d5 {
     font-family: Roslindale;
     font-style: normal;
     font-weight: 400;
-    font-display: auto;
+    font-display: swap;
     src: url('../../2023/09/Roslindale-400.woff2') format('woff2')
 }
 
@@ -1497,7 +1497,7 @@ body:not(.rtl) .elementor-6458 .elementor-element.elementor-element-18273d5 {
     font-family: 'Founders Grotesk';
     font-style: normal;
     font-weight: 400;
-    font-display: auto;
+    font-display: swap;
     src: url('../../2023/09/FoundersGroteskWeb-Regular.woff2') format('woff2')
 }
 
@@ -1505,6 +1505,6 @@ body:not(.rtl) .elementor-6458 .elementor-element.elementor-element-18273d5 {
     font-family: 'Founders Grotesk';
     font-style: normal;
     font-weight: 500;
-    font-display: auto;
+    font-display: swap;
     src: url('../../2023/09/FoundersGroteskWeb-Medium.woff2') format('woff2')
 }

@@ -2,14 +2,14 @@
 	font-family: 'Founders Grotesk';
 	font-style: normal;
 	font-weight: normal;
-	font-display: auto;
+	font-display: swap;
 	src: url('../../2023/09/FoundersGroteskWeb-Regular.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'Founders Grotesk';
 	font-style: normal;
 	font-weight: 500;
-	font-display: auto;
+	font-display: swap;
 	src: url('../../2023/09/FoundersGroteskWeb-Medium.woff2') format('woff2');
 }
 /* End Custom Fonts CSS */
@@ -17,7 +17,7 @@
 	font-family: 'Roslindale';
 	font-style: normal;
 	font-weight: normal;
-	font-display: auto;
+	font-display: swap;
 	src: url('../../2023/09/Roslindale-400.woff2') format('woff2');
 }
 /* End Custom Fonts CSS */
