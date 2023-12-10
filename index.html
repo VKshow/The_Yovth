@@ -69,9 +69,9 @@
 		href='wp-content/plugins/ele-custom-skin/assets/css/ecs-styleaeb9.css?ver=3.1.4' media='all' />
 	<link rel='stylesheet' id='elementor-post-8626-css'
 		href='wp-content/uploads/elementor/css/post-86264c2a.css?ver=1701374076' media='all' />
-	<link rel='stylesheet' id='google-fonts-1-css'
+	<!-- <link rel='stylesheet' id='google-fonts-1-css'
 		href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.4.1'
-		media='all' />
+		media='all' /> -->
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
 	<link rel='stylesheet' id='elementor-post-7213-css'
@@ -113,8 +113,7 @@
 		fbq('track', 'PageView');
 	</script> -->
 
-	<noscript><img decoding="async" loading="lazy" height="1" width="1" style="display:none"
-			src="https://www.facebook.com/tr?id=804151664944971&amp;ev=PageView&amp;noscript=1" /></noscript>
+	
 	<!-- End Meta Pixel Code -->
 	<!-- start Simple Custom CSS and JS -->
 	<style>
@@ -1701,21 +1700,7 @@
 
 									</div>
 
-									<script>
-										document.addEventListener('DOMContentLoaded', function () {
-											var video = document.getElementById('background-video');
-
-											if (video) {
-												video.addEventListener('loadeddata', function () {
-													video.play().catch(function (error) {
-														console.error('Error playing video:', error.message);
-													});
-												});
-											} else {
-												console.error('Video element not found.');
-											}
-										});
-									</script>
+									
 
 
 								</div>
@@ -2546,8 +2531,10 @@
 					data-id="a5c042f" data-element_type="widget" data-widget_type="html.default">
 					<div class="elementor-widget-container">
 						<iframe title="Google Map"
-							src="https://maps.google.com/maps?q=57+W+57th+St+11th+Floor,+Suite+1103,+New+York,+NY+10019,+United+States&amp;output=embed"
-							width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe> </div>
+        src="https://maps.google.com/maps?q=57+W+57th+St+11th+Floor,+Suite+1103,+New+York,+NY+10019,+United+States&amp;output=embed"
+        width="100%" height="350" frameborder="0" style="border:0"
+        allowfullscreen loading="lazy"></iframe>
+
 				</div>
 			</div>
 		</div>
@@ -2605,10 +2592,13 @@
 							<div class="elementor-element elementor-element-5136551 elementor-widget-tablet__width-initial address elementor-widget elementor-widget-heading"
 								data-id="5136551" data-element_type="widget" data-widget_type="heading.default">
 								<div class="elementor-widget-container">
-									<div class="elementor-heading-title elementor-size-default"><a
-											href="https://www.google.com/maps?q=57+W+57th+St+11th+Floor,+Suite+1103,+New+York,+NY+10019,+United+States"
-											target="_blank">57 W 57th St 11th Floor, Suite 1103, New York, NY 10019,
-											United States</a></div>
+									<div class="elementor-heading-title elementor-size-default">
+										<a href="https://www.google.com/maps?q=57+W+57th+St+11th+Floor,+Suite+1103,+New+York,+NY+10019,+United+States"
+										   target="_blank" loading="lazy">
+											57 W 57th St 11th Floor, Suite 1103, New York, NY 10019, United States
+										</a>
+									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -3619,9 +3609,24 @@
 		});
 	</script>
 	<!-- end Simple Custom CSS and JS -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var video = document.getElementById('background-video');
 
+			if (video) {
+				video.addEventListener('loadeddata', function () {
+					video.play().catch(function (error) {
+						console.error('Error playing video:', error.message);
+					});
+				});
+			} else {
+				console.error('Video element not found.');
+			}
+		});
+	</script>
 
-
+<noscript><img decoding="async" loading="lazy" height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=804151664944971&amp;ev=PageView&amp;noscript=1" /></noscript>
 
 
 
