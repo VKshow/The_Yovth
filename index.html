@@ -135,11 +135,11 @@
 		media='all' />
 	<link rel='stylesheet' id='elementor-pro-css'
 		href='wp-content/uploads/elementor/css/custom-pro-frontend-lite.minb576.css?ver=1701373567' media='all' />
-	<link rel='stylesheet' id='font-awesome-5-all-css'
-		href='wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min010b.css?ver=3.18.0-dev1' media='all' />
-	<link rel='stylesheet' id='font-awesome-4-shim-css'
+	<!-- <link rel='stylesheet' id='font-awesome-5-all-css'
+		href='wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min010b.css?ver=3.18.0-dev1' media='all' /> -->
+	<!-- <link rel='stylesheet' id='font-awesome-4-shim-css'
 		href='wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min010b.css?ver=3.18.0-dev1'
-		media='all' />
+		media='all' /> -->
 	<link rel='stylesheet' id='elementor-post-6458-css'
 		href='wp-content/uploads/elementor/css/post-64581501.css?ver=1701881673' media='all' />
 	<link rel='stylesheet' id='elementor-post-3374-css'
@@ -161,7 +161,7 @@
 		media='all' />
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 	<script src="wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js"></script>
-	<script  src="wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js"></script>
+	<script src="wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js"></script>
 	<script src="wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min010b.js?ver=3.18.0-dev1"
 		id="font-awesome-4-shim-js"></script>
 	<script id="ecs_ajax_load-js-extra">
@@ -170,9 +170,9 @@
 			"posts": "{\"error\":\"\",\"m\":\"\",\"p\":\"6458\",\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"\",\"pagename\":\"\",\"page_id\":\"6458\",\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":10,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}"
 		};
 	</script>
-	<script  src="wp-content/plugins/ele-custom-skin/assets/js/ecs_ajax_paginationaeb9.js?ver=3.1.4"
+	<script src="wp-content/plugins/ele-custom-skin/assets/js/ecs_ajax_paginationaeb9.js?ver=3.1.4"
 		id="ecs_ajax_load-js"></script>
-	<script  src="wp-content/plugins/ele-custom-skin/assets/js/ecsaeb9.js?ver=3.1.4" id="ecs-script-js"></script>
+	<script src="wp-content/plugins/ele-custom-skin/assets/js/ecsaeb9.js?ver=3.1.4" id="ecs-script-js"></script>
 	<link rel="https://api.w.org/" href="wp-json/index.html" />
 	<link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/6458.json" />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
@@ -207,8 +207,8 @@
 		fbq('init', '804151664944971');
 		fbq('track', 'PageView');
 	</script> -->
-	
-	<noscript><img decoding="async"  loading="lazy" height="1" width="1" style="display:none"
+
+	<noscript><img decoding="async" loading="lazy" height="1" width="1" style="display:none"
 			src="https://www.facebook.com/tr?id=804151664944971&amp;ev=PageView&amp;noscript=1" /></noscript>
 	<!-- End Meta Pixel Code -->
 	<!-- start Simple Custom CSS and JS -->
@@ -1284,10 +1284,13 @@
 					j[l].n = k.characterSet;
 					j[l].o = (new Date).getTimezoneOffset();
 					if (j.dataLayer)
-    for (const w of Object.entries(Object.assign({}, ...Object.entries(dataLayer).map(([key, value]) => ({ [key]: value })))))
-        zaraz.set(w[0], w[1], {
-            scope: "page"
-        });
+						for (const w of Object.entries(Object.assign({}, ...Object.entries(dataLayer).map(([key,
+								value]) => ({
+								[key]: value
+							})))))
+							zaraz.set(w[0], w[1], {
+								scope: "page"
+							});
 					j[l].q = [];
 					for (; j.zaraz.q.length;) {
 						const z = j.zaraz.q.shift();
@@ -1348,8 +1351,8 @@
 								display: inline-block
 							}
 						</style> <a href="index.html">
-							<img decoding="async"  decoding="async" src="wp-content/uploads/2023/08/image-4.svg" title="image 4"
-								alt="image 4" loading="lazy" /> </a>
+							<img decoding="async" decoding="async" src="wp-content/uploads/2023/08/image-4.svg"
+								title="image 4" alt="image 4" loading="lazy" /> </a>
 					</div>
 				</div>
 				<div class="elementor-element elementor-element-32d1aa9 elementor-hidden-tablet elementor-hidden-mobile elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu"
@@ -1384,7 +1387,8 @@
 									<ul class="sub-menu elementor-nav-menu--dropdown">
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8367">
-											<a href="jetpeel/index.html#scalp-and-hair-regeneration" class="elementor-sub-item">Scalp
+											<a href="jetpeel/index.html#scalp-and-hair-regeneration"
+												class="elementor-sub-item">Scalp
 												&#038; Neck Massage</a></li>
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8368">
@@ -1460,8 +1464,9 @@
 									<ul class="sub-menu elementor-nav-menu--dropdown">
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8367">
-											<a href="jetpeel/index.html#scalp-and-hair-regeneration" class="elementor-sub-item"
-												tabindex="-1">Scalp &#038; Neck Massage</a></li>
+											<a href="jetpeel/index.html#scalp-and-hair-regeneration"
+												class="elementor-sub-item" tabindex="-1">Scalp &#038; Neck Massage</a>
+										</li>
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8368">
 											<a href="jetpeel/index.html#scalp-and-hair-regeneration"
@@ -1644,8 +1649,8 @@
 					data-id="6364cb6" data-element_type="widget"
 					data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
 					<div class="elementor-widget-container">
-						<img decoding="async"  loading="lazy" fetchpriority="high" decoding="async" width="439" height="322"
-							src="wp-content/uploads/2023/09/Vector-1.svg"
+						<img decoding="async" loading="lazy" fetchpriority="high" decoding="async" width="439"
+							height="322" src="wp-content/uploads/2023/09/Vector-1.svg"
 							class="attachment-full size-full wp-image-7035" alt="background" /> </div>
 				</div>
 				<div class="elementor-element elementor-element-5d0d016 elementor-widget elementor-widget-heading"
@@ -1697,7 +1702,7 @@
 							<div class="elementor-element elementor-element-3b81907 elementor-widget__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image"
 								data-id="3b81907" data-element_type="widget" data-widget_type="image.default">
 								<div class="elementor-widget-container">
-									<img decoding="async"  loading="lazy" decoding="async" width="573" height="644"
+									<img decoding="async" loading="lazy" decoding="async" width="573" height="644"
 										src="wp-content/uploads/2023/09/Rectangle-1.jpg"
 										class="attachment-full size-full wp-image-6530" alt=""
 										srcset="https://sensoskinexperts.com/wp-content/uploads/2023/09/Rectangle-1.jpg 573w, https://sensoskinexperts.com/wp-content/uploads/2023/09/Rectangle-1-267x300.jpg 267w"
@@ -1753,8 +1758,8 @@
 									<div class="elementor-element elementor-element-c6ea066 elementor-widget__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image"
 										data-id="c6ea066" data-element_type="widget" data-widget_type="image.default">
 										<div class="elementor-widget-container">
-											<img decoding="async"  loading="lazy" decoding="async" width="573" height="545"
-												src="wp-content/uploads/2023/10/image-54.jpg"
+											<img decoding="async" loading="lazy" decoding="async" width="573"
+												height="545" src="wp-content/uploads/2023/10/image-54.jpg"
 												class="attachment-full size-full wp-image-7775" alt="Valerie Terletskiy"
 												srcset="https://sensoskinexperts.com/wp-content/uploads/2023/10/image-54.jpg 573w, https://sensoskinexperts.com/wp-content/uploads/2023/10/image-54-300x285.jpg 300w"
 												sizes="(max-width: 573px) 100vw, 573px" /> </div>
@@ -1784,30 +1789,30 @@
 
 
 									<div class="background-video-container">
-										<video id="background-video" autoplay muted playsinline loop>
+										<video id="background-video" autoplay muted playsinline loop loading="lazy">
 											<source src="./Senso_0920_video_v4.mp4" type="video/mp4">
 											Your browser does not support the video tag.
 										</video>
+
 									</div>
-									
+
 									<script>
 										document.addEventListener('DOMContentLoaded', function () {
-    var video = document.getElementById('background-video');
+											var video = document.getElementById('background-video');
 
-    if (video) {
-        video.addEventListener('loadeddata', function () {
-            video.play().catch(function (error) {
-                console.error('Error playing video:', error.message);
-            });
-        });
-    } else {
-        console.error('Video element not found.');
-    }
-});
-
+											if (video) {
+												video.addEventListener('loadeddata', function () {
+													video.play().catch(function (error) {
+														console.error('Error playing video:', error.message);
+													});
+												});
+											} else {
+												console.error('Video element not found.');
+											}
+										});
 									</script>
-									
-									
+
+
 								</div>
 							</div>
 						</div>
@@ -1837,7 +1842,7 @@
 						data-id="6991b27" data-element_type="widget"
 						data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
 						<div class="elementor-widget-container">
-							<img decoding="async"  loading="lazy" decoding="async" width="317" height="399"
+							<img decoding="async" loading="lazy" decoding="async" width="317" height="399"
 								src="wp-content/uploads/2023/09/%d0%a0%d0%b5%d1%81%d1%83%d1%80%d1%81-1%402x-100-1.png"
 								class="attachment-full size-full wp-image-6500" alt=""
 								srcset="https://sensoskinexperts.com/wp-content/uploads/2023/09/Ресурс-1@2x-100-1.png 317w, https://sensoskinexperts.com/wp-content/uploads/2023/09/Ресурс-1@2x-100-1-238x300.png 238w"
@@ -1848,7 +1853,7 @@
 						data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_flipX_effect&quot;:&quot;transform&quot;}"
 						data-widget_type="image.default">
 						<div class="elementor-widget-container">
-							<img decoding="async"  loading="lazy" decoding="async" width="317" height="399"
+							<img decoding="async" loading="lazy" decoding="async" width="317" height="399"
 								src="wp-content/uploads/2023/09/%d0%a0%d0%b5%d1%81%d1%83%d1%80%d1%81-1%402x-100-1.png"
 								class="attachment-full size-full wp-image-6500" alt=""
 								srcset="https://sensoskinexperts.com/wp-content/uploads/2023/09/Ресурс-1@2x-100-1.png 317w, https://sensoskinexperts.com/wp-content/uploads/2023/09/Ресурс-1@2x-100-1-238x300.png 238w"
@@ -2186,43 +2191,43 @@
 									<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
 										<div class="swiper-slide" role="group" aria-roledescription="slide"
 											aria-label="1 of 6">
-											<figure class="swiper-slide-inner"><img decoding="async"  loading="lazy" decoding="async"
-													class="swiper-slide-image"
+											<figure class="swiper-slide-inner"><img decoding="async" loading="lazy"
+													decoding="async" class="swiper-slide-image"
 													src="wp-content/uploads/2023/10/image-60.jpg" alt="before after" />
 											</figure>
 										</div>
 										<div class="swiper-slide" role="group" aria-roledescription="slide"
 											aria-label="2 of 6">
-											<figure class="swiper-slide-inner"><img decoding="async"  loading="lazy" decoding="async"
-													class="swiper-slide-image"
+											<figure class="swiper-slide-inner"><img decoding="async" loading="lazy"
+													decoding="async" class="swiper-slide-image"
 													src="wp-content/uploads/2023/10/image-0.jpg" alt="before after" />
 											</figure>
 										</div>
 										<div class="swiper-slide" role="group" aria-roledescription="slide"
 											aria-label="3 of 6">
-											<figure class="swiper-slide-inner"><img decoding="async"  loading="lazy" decoding="async"
-													class="swiper-slide-image"
+											<figure class="swiper-slide-inner"><img decoding="async" loading="lazy"
+													decoding="async" class="swiper-slide-image"
 													src="wp-content/uploads/2023/10/image-6.jpg" alt="image 6" />
 											</figure>
 										</div>
 										<div class="swiper-slide" role="group" aria-roledescription="slide"
 											aria-label="4 of 6">
-											<figure class="swiper-slide-inner"><img decoding="async"  loading="lazy" decoding="async"
-													class="swiper-slide-image"
+											<figure class="swiper-slide-inner"><img decoding="async" loading="lazy"
+													decoding="async" class="swiper-slide-image"
 													src="wp-content/uploads/2023/11/6_1_Irina-scaled.webp"
 													alt="6_1_Irina" /></figure>
 										</div>
 										<div class="swiper-slide" role="group" aria-roledescription="slide"
 											aria-label="5 of 6">
-											<figure class="swiper-slide-inner"><img decoding="async"  loading="lazy" decoding="async"
-													class="swiper-slide-image"
+											<figure class="swiper-slide-inner"><img decoding="async" loading="lazy"
+													decoding="async" class="swiper-slide-image"
 													src="wp-content/uploads/2023/11/5_2_Katya.jpg" alt="5_2_Katya" />
 											</figure>
 										</div>
 										<div class="swiper-slide" role="group" aria-roledescription="slide"
 											aria-label="6 of 6">
-											<figure class="swiper-slide-inner"><img decoding="async"  loading="lazy" decoding="async"
-													class="swiper-slide-image"
+											<figure class="swiper-slide-inner"><img decoding="async" loading="lazy"
+													decoding="async" class="swiper-slide-image"
 													src="wp-content/uploads/2023/11/3_1_Penny-scaled.webp"
 													alt="3_1_Penny" /></figure>
 										</div>
@@ -2296,7 +2301,7 @@
 								<div class="elementor-element elementor-element-e4f1008 elementor-widget elementor-widget-image"
 									data-id="e4f1008" data-element_type="widget" data-widget_type="image.default">
 									<div class="elementor-widget-container">
-										<img decoding="async"  loading="lazy" decoding="async" width="139" height="138"
+										<img decoding="async" loading="lazy" decoding="async" width="139" height="138"
 											src="wp-content/uploads/2023/09/icon.png"
 											class="attachment-full size-full wp-image-6600" alt="" /> </div>
 								</div>
@@ -2328,7 +2333,7 @@
 								<div class="elementor-element elementor-element-1a2f87d elementor-widget elementor-widget-image"
 									data-id="1a2f87d" data-element_type="widget" data-widget_type="image.default">
 									<div class="elementor-widget-container">
-										<img decoding="async"  loading="lazy" decoding="async" width="139" height="126"
+										<img decoding="async" loading="lazy" decoding="async" width="139" height="126"
 											src="wp-content/uploads/2023/09/icon-1.png"
 											class="attachment-full size-full wp-image-6601" alt="" /> </div>
 								</div>
@@ -2359,7 +2364,7 @@
 								<div class="elementor-element elementor-element-c97c965 elementor-widget elementor-widget-image"
 									data-id="c97c965" data-element_type="widget" data-widget_type="image.default">
 									<div class="elementor-widget-container">
-										<img decoding="async"  loading="lazy" decoding="async" width="129" height="138"
+										<img decoding="async" loading="lazy" decoding="async" width="129" height="138"
 											src="wp-content/uploads/2023/09/icon-2.png"
 											class="attachment-full size-full wp-image-6602" alt="" /> </div>
 								</div>
@@ -2408,16 +2413,18 @@
 			<div class="elementor-element elementor-element-8e3f9c6 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image"
 				data-id="8e3f9c6" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-					<img decoding="async"  decoding="async" loading="lazy" width="1280" height="853" src="wp-content/uploads/2023/09/IMG_9663.jpg"
-						class="attachment-full size-full wp-image-8463" alt=""
+					<img decoding="async" decoding="async" loading="lazy" width="1280" height="853"
+						src="wp-content/uploads/2023/09/IMG_9663.jpg" class="attachment-full size-full wp-image-8463"
+						alt=""
 						srcset="https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9663.jpg 1280w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9663-300x200.jpg 300w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9663-1024x682.jpg 1024w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9663-768x512.jpg 768w"
 						sizes="(max-width: 1280px) 100vw, 1280px" /> </div>
 			</div>
 			<div class="elementor-element elementor-element-174df2a elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image"
 				data-id="174df2a" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-					<img decoding="async"  decoding="async" loading="lazy" width="853" height="1280" src="wp-content/uploads/2023/09/IMG_9662.jpg"
-						class="attachment-full size-full wp-image-8462" alt=""
+					<img decoding="async" decoding="async" loading="lazy" width="853" height="1280"
+						src="wp-content/uploads/2023/09/IMG_9662.jpg" class="attachment-full size-full wp-image-8462"
+						alt=""
 						srcset="https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9662.jpg 853w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9662-200x300.jpg 200w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9662-682x1024.jpg 682w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9662-768x1152.jpg 768w"
 						sizes="(max-width: 853px) 100vw, 853px" /> </div>
 			</div>
@@ -2427,7 +2434,8 @@
 				<div class="elementor-element elementor-element-ae152f7 elementor-widget-mobile__width-initial elementor-widget elementor-widget-image"
 					data-id="ae152f7" data-element_type="widget" data-widget_type="image.default">
 					<div class="elementor-widget-container">
-						<img decoding="async"  loading="lazy" width="1280" height="853" src="wp-content/uploads/2023/09/IMG_9659.jpg"
+						<img decoding="async" loading="lazy" width="1280" height="853"
+							src="wp-content/uploads/2023/09/IMG_9659.jpg"
 							class="attachment-full size-full wp-image-8461" alt=""
 							srcset="https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9659.jpg 1280w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9659-300x200.jpg 300w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9659-1024x682.jpg 1024w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9659-768x512.jpg 768w"
 							sizes="(max-width: 1280px) 100vw, 1280px" /> </div>
@@ -2435,7 +2443,8 @@
 				<div class="elementor-element elementor-element-7b7fc3a elementor-widget-mobile__width-initial elementor-widget elementor-widget-image"
 					data-id="7b7fc3a" data-element_type="widget" data-widget_type="image.default">
 					<div class="elementor-widget-container">
-						<img decoding="async"  decoding="async" loading="lazy" width="906" height="1280" src="wp-content/uploads/2023/09/IMG_9661.jpg"
+						<img decoding="async" decoding="async" loading="lazy" width="906" height="1280"
+							src="wp-content/uploads/2023/09/IMG_9661.jpg"
 							class="attachment-full size-full wp-image-8460" alt=""
 							srcset="https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9661.jpg 906w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9661-212x300.jpg 212w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9661-725x1024.jpg 725w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9661-768x1085.jpg 768w"
 							sizes="(max-width: 906px) 100vw, 906px" /> </div>
@@ -2444,8 +2453,9 @@
 			<div class="elementor-element elementor-element-6f960f7 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image"
 				data-id="6f960f7" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-					<img decoding="async"  loading="lazy" width="1280" height="853" src="wp-content/uploads/2023/09/IMG_9655.jpg"
-						class="attachment-full size-full wp-image-8459" alt=""
+					<img decoding="async" loading="lazy" width="1280" height="853"
+						src="wp-content/uploads/2023/09/IMG_9655.jpg" class="attachment-full size-full wp-image-8459"
+						alt=""
 						srcset="https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9655.jpg 1280w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9655-300x200.jpg 300w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9655-1024x682.jpg 1024w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9655-768x512.jpg 768w"
 						sizes="(max-width: 1280px) 100vw, 1280px" /> </div>
 			</div>
@@ -2455,7 +2465,8 @@
 				<div class="elementor-element elementor-element-1e40c65 elementor-widget-mobile__width-initial elementor-widget elementor-widget-image"
 					data-id="1e40c65" data-element_type="widget" data-widget_type="image.default">
 					<div class="elementor-widget-container">
-						<img decoding="async"  decoding="async" loading="lazy" width="1280" height="853" src="wp-content/uploads/2023/09/IMG_9657.jpg"
+						<img decoding="async" decoding="async" loading="lazy" width="1280" height="853"
+							src="wp-content/uploads/2023/09/IMG_9657.jpg"
 							class="attachment-full size-full wp-image-8457" alt=""
 							srcset="https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9657.jpg 1280w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9657-300x200.jpg 300w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9657-1024x682.jpg 1024w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9657-768x512.jpg 768w"
 							sizes="(max-width: 1280px) 100vw, 1280px" /> </div>
@@ -2463,7 +2474,8 @@
 				<div class="elementor-element elementor-element-c9c9771 elementor-widget-mobile__width-initial elementor-widget elementor-widget-image"
 					data-id="c9c9771" data-element_type="widget" data-widget_type="image.default">
 					<div class="elementor-widget-container">
-						<img decoding="async"  decoding="async" loading="lazy" width="1280" height="853" src="wp-content/uploads/2023/09/IMG_9660.jpg"
+						<img decoding="async" decoding="async" loading="lazy" width="1280" height="853"
+							src="wp-content/uploads/2023/09/IMG_9660.jpg"
 							class="attachment-full size-full wp-image-8458" alt=""
 							srcset="https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9660.jpg 1280w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9660-300x200.jpg 300w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9660-1024x682.jpg 1024w, https://sensoskinexperts.com/wp-content/uploads/2023/09/IMG_9660-768x512.jpg 768w"
 							sizes="(max-width: 1280px) 100vw, 1280px" /> </div>
@@ -2628,8 +2640,7 @@
 				<div class="elementor-element elementor-element-a5c042f elementor-widget__width-inherit elementor-widget elementor-widget-html"
 					data-id="a5c042f" data-element_type="widget" data-widget_type="html.default">
 					<div class="elementor-widget-container">
-						<iframe
-						title="Google Map"
+						<iframe title="Google Map"
 							src="https://maps.google.com/maps?q=57+W+57th+St+11th+Floor,+Suite+1103,+New+York,+NY+10019,+United+States&amp;output=embed"
 							width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe> </div>
 				</div>
@@ -2648,7 +2659,7 @@
 							data-id="7063e80" data-element_type="widget" data-widget_type="theme-site-logo.default">
 							<div class="elementor-widget-container">
 								<a href="index.html">
-									<img decoding="async"  decoding="async" loading="lazy" width="245" height="84"
+									<img decoding="async" decoding="async" loading="lazy" width="245" height="84"
 										src="wp-content/uploads/2023/08/image-4.svg"
 										class="attachment-full size-full wp-image-3427" alt="" /> </a>
 							</div>
@@ -2915,8 +2926,11 @@
 							}
 						</style>
 						<div class="e-hosted-video elementor-wrapper elementor-open-inline">
-							<video class="elementor-video" src="./Senso_0920_video_v4.mp4"
-								autoplay="" loop="" controls="" playsinline="" controlsList="nodownload"></video>
+							<video id="background-video" autoplay muted playsinline loop loading="lazy">
+								<source src="./Senso_0920_video_v4.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+
 						</div>
 					</div>
 				</div>
@@ -3025,7 +3039,8 @@
 									<ul id="menu-1-25ac23a" class="elementor-nav-menu sm-vertical">
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8369">
-											<a href="jetpeel/index.html#scalp-and-hair-regeneration" class="elementor-item">Scalp
+											<a href="jetpeel/index.html#scalp-and-hair-regeneration"
+												class="elementor-item">Scalp
 												&#038; Neck Massage</a></li>
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8370">
@@ -3039,8 +3054,8 @@
 									<ul id="menu-2-25ac23a" class="elementor-nav-menu sm-vertical">
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8369">
-											<a href="jetpeel/index.html#scalp-and-hair-regeneration" class="elementor-item"
-												tabindex="-1">Scalp &#038; Neck Massage</a></li>
+											<a href="jetpeel/index.html#scalp-and-hair-regeneration"
+												class="elementor-item" tabindex="-1">Scalp &#038; Neck Massage</a></li>
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8370">
 											<a href="jetpeel/index.html#scalp-and-hair-regeneration"
@@ -3176,7 +3191,8 @@
 									<ul class="sub-menu elementor-nav-menu--dropdown">
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8367">
-											<a href="jetpeel/index.html#scalp-and-hair-regeneration" class="elementor-sub-item">Scalp
+											<a href="jetpeel/index.html#scalp-and-hair-regeneration"
+												class="elementor-sub-item">Scalp
 												&#038; Neck Massage</a></li>
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8368">
@@ -3235,8 +3251,9 @@
 									<ul class="sub-menu elementor-nav-menu--dropdown">
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8367">
-											<a href="jetpeel/index.html#scalp-and-hair-regeneration" class="elementor-sub-item"
-												tabindex="-1">Scalp &#038; Neck Massage</a></li>
+											<a href="jetpeel/index.html#scalp-and-hair-regeneration"
+												class="elementor-sub-item" tabindex="-1">Scalp &#038; Neck Massage</a>
+										</li>
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8368">
 											<a href="jetpeel/index.html#scalp-and-hair-regeneration"
@@ -3258,329 +3275,339 @@
 											<a href="jetpeel/index.html#scalp-and-hair-regeneration"
 												class="elementor-sub-item elementor-item-anchor" tabindex="-1">Scalp and
 												Hair Regeneration</a></li>
-											<li
-												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8385">
-												<a href="jetpeel/index.html#jetpeel-hands"
-													class="elementor-sub-item elementor-item-anchor" tabindex="-1">JetPeel
-													Hands</a></li>
-											</ul>
-											</li>
-											<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8159"><a
-												href="about/index.html" class="elementor-item" tabindex="-1">About us</a></li>
-											<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6009"><a
-												href="contact-us/index.html" class="elementor-item" tabindex="-1">Contact us</a>
-											</li>
-											</ul>
-											</nav>
-											</div>
-											</div>
-											</div>
-											</div>
-											</div>
-											<link rel='stylesheet' id='elementor-post-7213-css'
-											href='wp-content/uploads/elementor/css/post-72135074.css?ver=1701375663' media='all' />
-											<script
-											src="wp-content/plugins/before-after-image-comparison-slider-for-elementor/assets/js/jquery.event.move8a54.js?ver=1.0.0"
-											id="wb-elementor-before-after-slider-event-move-js"></script>
-											<script
-											src="wp-content/plugins/before-after-image-comparison-slider-for-elementor/assets/js/jquery.twentytwenty8a54.js?ver=1.0.0"
-											id="wb-elementor-before-after-slider-library-js"></script>
-											<script  src="wp-content/plugins/before-after-image-comparison-slider-for-elementor/assets/js/main8a54.js?ver=1.0.0"
-											id="wb-elementor-before-after-slider-main-js"></script>
-											<script  src="wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.minf269.js?ver=1.0.1"
-											id="smartmenus-js"></script>
-											<script  src="wp-content/plugins/elementor/assets/js/webpack.runtime.min010b.js?ver=3.18.0-dev1"
-											id="elementor-webpack-runtime-js"></script>
-											<script src="wp-content/plugins/elementor/assets/js/frontend-modules.min010b.js?ver=3.18.0-dev1"
-											id="elementor-frontend-modules-js"></script>
-											<script src="wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2" id="jquery-ui-core-js"></script>
-											<script   id="elementor-frontend-js-before">
-											var elementorFrontendConfig = {
-												"environmentMode": {
-													"edit": false,
-													"wpPreview": false,
-													"isScriptDebug": false
-												},
-												"i18n": {
-													"shareOnFacebook": "Share on Facebook",
-													"shareOnTwitter": "Share on Twitter",
-													"pinIt": "Pin it",
-													"download": "Download",
-													"downloadImage": "Download image",
-													"fullscreen": "Fullscreen",
-													"zoom": "Zoom",
-													"share": "Share",
-													"playVideo": "Play Video",
-													"previous": "Previous",
-													"next": "Next",
-													"close": "Close",
-													"a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right",
-													"a11yCarouselPrevSlideMessage": "Previous slide",
-													"a11yCarouselNextSlideMessage": "Next slide",
-													"a11yCarouselFirstSlideMessage": "This is the first slide",
-													"a11yCarouselLastSlideMessage": "This is the last slide",
-													"a11yCarouselPaginationBulletMessage": "Go to slide"
-												},
-												"is_rtl": false,
-												"breakpoints": {
-													"xs": 0,
-													"sm": 480,
-													"md": 768,
-													"lg": 1025,
-													"xl": 1440,
-													"xxl": 1600
-												},
-												"responsive": {
-													"breakpoints": {
-														"mobile": {
-															"label": "Mobile Portrait",
-															"value": 767,
-															"default_value": 767,
-															"direction": "max",
-															"is_enabled": true
-														},
-														"mobile_extra": {
-															"label": "Mobile Landscape",
-															"value": 880,
-															"default_value": 880,
-															"direction": "max",
-															"is_enabled": false
-														},
-														"tablet": {
-															"label": "Tablet Portrait",
-															"value": 1024,
-															"default_value": 1024,
-															"direction": "max",
-															"is_enabled": true
-														},
-														"tablet_extra": {
-															"label": "Tablet Landscape",
-															"value": 1200,
-															"default_value": 1200,
-															"direction": "max",
-															"is_enabled": false
-														},
-														"laptop": {
-															"label": "Laptop",
-															"value": 1440,
-															"default_value": 1366,
-															"direction": "max",
-															"is_enabled": true
-														},
-														"widescreen": {
-															"label": "Widescreen",
-															"value": 2400,
-															"default_value": 2400,
-															"direction": "min",
-															"is_enabled": false
-														}
-													}
-												},
-												"version": "3.18.0-dev1",
-												"is_static": false,
-												"experimentalFeatures": {
-													"e_dom_optimization": true,
-													"e_optimized_assets_loading": true,
-													"e_optimized_css_loading": true,
-													"e_font_icon_svg": true,
-													"additional_custom_breakpoints": true,
-													"container": true,
-													"e_swiper_latest": true,
-													"container_grid": true,
-													"block_editor_assets_optimize": true,
-													"nested-elements": true,
-													"e_image_loading_optimization": true,
-													"e_global_styleguide": true,
-													"mega-menu": true
-												},
-												"urls": {
-													"assets": "https:\/\/sensoskinexperts.com\/wp-content\/plugins\/elementor\/assets\/"
-												},
-												"swiperClass": "swiper",
-												"settings": {
-													"page": [],
-													"editorPreferences": []
-												},
-												"kit": {
-													"active_breakpoints": ["viewport_mobile", "viewport_tablet", "viewport_laptop"],
-													"viewport_laptop": 1440,
-													"global_image_lightbox": "yes",
-													"lightbox_enable_counter": "yes",
-													"lightbox_enable_fullscreen": "yes",
-													"lightbox_enable_zoom": "yes",
-													"lightbox_enable_share": "yes",
-													"lightbox_title_src": "title",
-													"lightbox_description_src": "description"
-												},
-												"post": {
-													"id": 6458,
-													"title": "Spa%20Massage%20%7C%20Rejuvenation%20Spa%20Massage%20in%20Manhattan%20-%20SENSO",
-													"excerpt": "",
-													"featuredImage": false
-												}
-											};
-											</script>
-											<script   src="wp-content/plugins/elementor/assets/js/frontend.min010b.js?ver=3.18.0-dev1" id="elementor-frontend-js">
-											</script>
-											<script src="wp-content/plugins/ele-custom-skin-pro/assets/js/ecspro324d.js?ver=3.1.0" id="ecspro-js"></script>
-											<script  src="wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min5d63.js?ver=3.17.1"
-											id="elementor-pro-webpack-runtime-js"></script>
-											<script  src="wp-includes/js/dist/vendor/wp-polyfill-inert.min0226.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
-											<script  src="wp-includes/js/dist/vendor/regenerator-runtime.min6c85.js?ver=0.14.0" id="regenerator-runtime-js">
-											</script>
-											<script   src="wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0" id="wp-polyfill-js"></script>
-											<script  src="wp-includes/js/dist/hooks.min2ebd.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
-											<script  src="wp-includes/js/dist/i18n.minf92f.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
-											<script id="wp-i18n-js-after">
-											wp.i18n.setLocaleData({
-												'text direction\u0004ltr': ['ltr']
-											});
-											</script>
-											<script id="elementor-pro-frontend-js-before">
-											var ElementorProFrontendConfig = {
-												"ajaxurl": "https:\/\/sensoskinexperts.com\/wp-admin\/admin-ajax.php",
-												"nonce": "e162514663",
-												"urls": {
-													"assets": "https:\/\/sensoskinexperts.com\/wp-content\/plugins\/elementor-pro\/assets\/",
-													"rest": "https:\/\/sensoskinexperts.com\/wp-json\/"
-												},
-												"shareButtonsNetworks": {
-													"facebook": {
-														"title": "Facebook",
-														"has_counter": true
-													},
-													"twitter": {
-														"title": "Twitter"
-													},
-													"linkedin": {
-														"title": "LinkedIn",
-														"has_counter": true
-													},
-													"pinterest": {
-														"title": "Pinterest",
-														"has_counter": true
-													},
-													"reddit": {
-														"title": "Reddit",
-														"has_counter": true
-													},
-													"vk": {
-														"title": "VK",
-														"has_counter": true
-													},
-													"odnoklassniki": {
-														"title": "OK",
-														"has_counter": true
-													},
-													"tumblr": {
-														"title": "Tumblr"
-													},
-													"digg": {
-														"title": "Digg"
-													},
-													"skype": {
-														"title": "Skype"
-													},
-													"stumbleupon": {
-														"title": "StumbleUpon",
-														"has_counter": true
-													},
-													"mix": {
-														"title": "Mix"
-													},
-													"telegram": {
-														"title": "Telegram"
-													},
-													"pocket": {
-														"title": "Pocket",
-														"has_counter": true
-													},
-													"xing": {
-														"title": "XING",
-														"has_counter": true
-													},
-													"whatsapp": {
-														"title": "WhatsApp"
-													},
-													"email": {
-														"title": "Email"
-													},
-													"print": {
-														"title": "Print"
-													}
-												},
-												"facebook_sdk": {
-													"lang": "en_US",
-													"app_id": ""
-												},
-												"lottie": {
-													"defaultAnimationUrl": "https:\/\/sensoskinexperts.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"
-												}
-											};
-											</script>
-											<script src="wp-content/plugins/elementor-pro/assets/js/frontend.min5d63.js?ver=3.17.1"
-											id="elementor-pro-frontend-js"></script>
-											<script src="wp-content/plugins/elementor-pro/assets/js/elements-handlers.min5d63.js?ver=3.17.1"
-											id="pro-elements-handlers-js"></script>
-											<script src="wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min5d63.js?ver=3.17.1"
-											id="e-sticky-js"></script>
-											<!-- start Simple Custom CSS and JS -->
-											<script>
-											////MOBILE MENU
-											document.addEventListener("DOMContentLoaded", function () {
-  const mobMenuBtn = document.querySelector('.mobile-menu-btn');
+										<li
+											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8385">
+											<a href="jetpeel/index.html#jetpeel-hands"
+												class="elementor-sub-item elementor-item-anchor" tabindex="-1">JetPeel
+												Hands</a></li>
+									</ul>
+								</li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8159"><a
+										href="about/index.html" class="elementor-item" tabindex="-1">About us</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6009"><a
+										href="contact-us/index.html" class="elementor-item" tabindex="-1">Contact us</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel='stylesheet' id='elementor-post-7213-css'
+		href='wp-content/uploads/elementor/css/post-72135074.css?ver=1701375663' media='all' />
+	<script
+		src="wp-content/plugins/before-after-image-comparison-slider-for-elementor/assets/js/jquery.event.move8a54.js?ver=1.0.0"
+		id="wb-elementor-before-after-slider-event-move-js"></script>
+	<script
+		src="wp-content/plugins/before-after-image-comparison-slider-for-elementor/assets/js/jquery.twentytwenty8a54.js?ver=1.0.0"
+		id="wb-elementor-before-after-slider-library-js"></script>
+	<script src="wp-content/plugins/before-after-image-comparison-slider-for-elementor/assets/js/main8a54.js?ver=1.0.0"
+		id="wb-elementor-before-after-slider-main-js"></script>
+	<script src="wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.minf269.js?ver=1.0.1"
+		id="smartmenus-js"></script>
+	<script src="wp-content/plugins/elementor/assets/js/webpack.runtime.min010b.js?ver=3.18.0-dev1"
+		id="elementor-webpack-runtime-js"></script>
+	<script src="wp-content/plugins/elementor/assets/js/frontend-modules.min010b.js?ver=3.18.0-dev1"
+		id="elementor-frontend-modules-js"></script>
+	<script src="wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+	<script id="elementor-frontend-js-before">
+		var elementorFrontendConfig = {
+			"environmentMode": {
+				"edit": false,
+				"wpPreview": false,
+				"isScriptDebug": false
+			},
+			"i18n": {
+				"shareOnFacebook": "Share on Facebook",
+				"shareOnTwitter": "Share on Twitter",
+				"pinIt": "Pin it",
+				"download": "Download",
+				"downloadImage": "Download image",
+				"fullscreen": "Fullscreen",
+				"zoom": "Zoom",
+				"share": "Share",
+				"playVideo": "Play Video",
+				"previous": "Previous",
+				"next": "Next",
+				"close": "Close",
+				"a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right",
+				"a11yCarouselPrevSlideMessage": "Previous slide",
+				"a11yCarouselNextSlideMessage": "Next slide",
+				"a11yCarouselFirstSlideMessage": "This is the first slide",
+				"a11yCarouselLastSlideMessage": "This is the last slide",
+				"a11yCarouselPaginationBulletMessage": "Go to slide"
+			},
+			"is_rtl": false,
+			"breakpoints": {
+				"xs": 0,
+				"sm": 480,
+				"md": 768,
+				"lg": 1025,
+				"xl": 1440,
+				"xxl": 1600
+			},
+			"responsive": {
+				"breakpoints": {
+					"mobile": {
+						"label": "Mobile Portrait",
+						"value": 767,
+						"default_value": 767,
+						"direction": "max",
+						"is_enabled": true
+					},
+					"mobile_extra": {
+						"label": "Mobile Landscape",
+						"value": 880,
+						"default_value": 880,
+						"direction": "max",
+						"is_enabled": false
+					},
+					"tablet": {
+						"label": "Tablet Portrait",
+						"value": 1024,
+						"default_value": 1024,
+						"direction": "max",
+						"is_enabled": true
+					},
+					"tablet_extra": {
+						"label": "Tablet Landscape",
+						"value": 1200,
+						"default_value": 1200,
+						"direction": "max",
+						"is_enabled": false
+					},
+					"laptop": {
+						"label": "Laptop",
+						"value": 1440,
+						"default_value": 1366,
+						"direction": "max",
+						"is_enabled": true
+					},
+					"widescreen": {
+						"label": "Widescreen",
+						"value": 2400,
+						"default_value": 2400,
+						"direction": "min",
+						"is_enabled": false
+					}
+				}
+			},
+			"version": "3.18.0-dev1",
+			"is_static": false,
+			"experimentalFeatures": {
+				"e_dom_optimization": true,
+				"e_optimized_assets_loading": true,
+				"e_optimized_css_loading": true,
+				"e_font_icon_svg": true,
+				"additional_custom_breakpoints": true,
+				"container": true,
+				"e_swiper_latest": true,
+				"container_grid": true,
+				"block_editor_assets_optimize": true,
+				"nested-elements": true,
+				"e_image_loading_optimization": true,
+				"e_global_styleguide": true,
+				"mega-menu": true
+			},
+			"urls": {
+				"assets": "https:\/\/sensoskinexperts.com\/wp-content\/plugins\/elementor\/assets\/"
+			},
+			"swiperClass": "swiper",
+			"settings": {
+				"page": [],
+				"editorPreferences": []
+			},
+			"kit": {
+				"active_breakpoints": ["viewport_mobile", "viewport_tablet", "viewport_laptop"],
+				"viewport_laptop": 1440,
+				"global_image_lightbox": "yes",
+				"lightbox_enable_counter": "yes",
+				"lightbox_enable_fullscreen": "yes",
+				"lightbox_enable_zoom": "yes",
+				"lightbox_enable_share": "yes",
+				"lightbox_title_src": "title",
+				"lightbox_description_src": "description"
+			},
+			"post": {
+				"id": 6458,
+				"title": "Spa%20Massage%20%7C%20Rejuvenation%20Spa%20Massage%20in%20Manhattan%20-%20SENSO",
+				"excerpt": "",
+				"featuredImage": false
+			}
+		};
+	</script>
+	<script src="wp-content/plugins/elementor/assets/js/frontend.min010b.js?ver=3.18.0-dev1" id="elementor-frontend-js">
+	</script>
+	<script src="wp-content/plugins/ele-custom-skin-pro/assets/js/ecspro324d.js?ver=3.1.0" id="ecspro-js"></script>
+	<script src="wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min5d63.js?ver=3.17.1"
+		id="elementor-pro-webpack-runtime-js"></script>
+	<script src="wp-includes/js/dist/vendor/wp-polyfill-inert.min0226.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+	<script src="wp-includes/js/dist/vendor/regenerator-runtime.min6c85.js?ver=0.14.0" id="regenerator-runtime-js">
+	</script>
+	<script src="wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0" id="wp-polyfill-js"></script>
+	<script src="wp-includes/js/dist/hooks.min2ebd.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
+	<script src="wp-includes/js/dist/i18n.minf92f.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
+	<script id="wp-i18n-js-after">
+		wp.i18n.setLocaleData({
+			'text direction\u0004ltr': ['ltr']
+		});
+	</script>
+	<script id="elementor-pro-frontend-js-before">
+		var ElementorProFrontendConfig = {
+			"ajaxurl": "https:\/\/sensoskinexperts.com\/wp-admin\/admin-ajax.php",
+			"nonce": "e162514663",
+			"urls": {
+				"assets": "https:\/\/sensoskinexperts.com\/wp-content\/plugins\/elementor-pro\/assets\/",
+				"rest": "https:\/\/sensoskinexperts.com\/wp-json\/"
+			},
+			"shareButtonsNetworks": {
+				"facebook": {
+					"title": "Facebook",
+					"has_counter": true
+				},
+				"twitter": {
+					"title": "Twitter"
+				},
+				"linkedin": {
+					"title": "LinkedIn",
+					"has_counter": true
+				},
+				"pinterest": {
+					"title": "Pinterest",
+					"has_counter": true
+				},
+				"reddit": {
+					"title": "Reddit",
+					"has_counter": true
+				},
+				"vk": {
+					"title": "VK",
+					"has_counter": true
+				},
+				"odnoklassniki": {
+					"title": "OK",
+					"has_counter": true
+				},
+				"tumblr": {
+					"title": "Tumblr"
+				},
+				"digg": {
+					"title": "Digg"
+				},
+				"skype": {
+					"title": "Skype"
+				},
+				"stumbleupon": {
+					"title": "StumbleUpon",
+					"has_counter": true
+				},
+				"mix": {
+					"title": "Mix"
+				},
+				"telegram": {
+					"title": "Telegram"
+				},
+				"pocket": {
+					"title": "Pocket",
+					"has_counter": true
+				},
+				"xing": {
+					"title": "XING",
+					"has_counter": true
+				},
+				"whatsapp": {
+					"title": "WhatsApp"
+				},
+				"email": {
+					"title": "Email"
+				},
+				"print": {
+					"title": "Print"
+				}
+			},
+			"facebook_sdk": {
+				"lang": "en_US",
+				"app_id": ""
+			},
+			"lottie": {
+				"defaultAnimationUrl": "https:\/\/sensoskinexperts.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"
+			}
+		};
+	</script>
+	<script src="wp-content/plugins/elementor-pro/assets/js/frontend.min5d63.js?ver=3.17.1"
+		id="elementor-pro-frontend-js"></script>
+	<script src="wp-content/plugins/elementor-pro/assets/js/elements-handlers.min5d63.js?ver=3.17.1"
+		id="pro-elements-handlers-js"></script>
+	<script src="wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min5d63.js?ver=3.17.1"
+		id="e-sticky-js"></script>
+	<!-- start Simple Custom CSS and JS -->
+	<script>
+		////MOBILE MENU
+		document.addEventListener("DOMContentLoaded", function () {
+			const mobMenuBtn = document.querySelector('.mobile-menu-btn');
 
-  if (mobMenuBtn) {
-    mobMenuBtn.addEventListener('click', function () {
-      setTimeout(() => {
-        const mobMenuLinks = document.querySelectorAll('.mob-menu-custom .menu-link');
+			if (mobMenuBtn) {
+				mobMenuBtn.addEventListener('click', function () {
+					setTimeout(() => {
+						const mobMenuLinks = document.querySelectorAll('.mob-menu-custom .menu-link');
 
-        if (mobMenuLinks) {
-          mobMenuLinks.forEach(link => {
-            link.addEventListener('click', function () {
-              const mobMenuDropdown = link.querySelector('.menu-dropdown');
-              const arrowBack = document.querySelector('.arrow-back');
+						if (mobMenuLinks) {
+							mobMenuLinks.forEach(link => {
+								link.addEventListener('click', function () {
+									const mobMenuDropdown = link.querySelector(
+										'.menu-dropdown');
+									const arrowBack = document.querySelector(
+										'.arrow-back');
 
-              if (mobMenuDropdown) {
-                mobMenuDropdown.classList.add('active');
-                arrowBack.classList.add('active');
+									if (mobMenuDropdown) {
+										mobMenuDropdown.classList.add('active');
+										arrowBack.classList.add('active');
 
-                if (arrowBack) {
-                  arrowBack.addEventListener('click', function () {
-                    mobMenuDropdown.classList.remove('active');
-                    arrowBack.classList.remove('active');
-                  });
-                }
-              }
-            });
-          });
-        }
-      }, 300);
-    });
-  }
-});
+										if (arrowBack) {
+											arrowBack.addEventListener('click',
+												function () {
+													mobMenuDropdown.classList
+														.remove('active');
+													arrowBack.classList.remove(
+														'active');
+												});
+										}
+									}
+								});
+							});
+						}
+					}, 300);
+				});
+			}
+		});
 
 
 
-											/////DESKTOP MENU BG ON SCROLL
-											document.addEventListener("DOMContentLoaded", function () {
-  const deskMenu = document.querySelector('.elementor-location-header .site-header');
+		/////DESKTOP MENU BG ON SCROLL
+		document.addEventListener("DOMContentLoaded", function () {
+			const deskMenu = document.querySelector('.elementor-location-header .site-header');
 
-  if (deskMenu) {
-    function toggleHeaderBg() {
-      const shouldAddBg = window.scrollY > 110 || document.documentElement.scrollTop > 110;
-      deskMenu.classList.toggle('bg', shouldAddBg);
-    }
+			if (deskMenu) {
+				function toggleHeaderBg() {
+					const shouldAddBg = window.scrollY > 110 || document.documentElement.scrollTop > 110;
+					deskMenu.classList.toggle('bg', shouldAddBg);
+				}
 
-    window.addEventListener('scroll', toggleHeaderBg);
-  }
-});
+				window.addEventListener('scroll', toggleHeaderBg);
+			}
+		});
+	</script>
+	<!-- end Simple Custom CSS and JS -->
 
-											</script>
-											<!-- end Simple Custom CSS and JS -->
 
-											</body>
 
-											<!-- Mirrored from sensoskinexperts.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Dec 2023 03:09:43 GMT -->
 
-											</html>
+
+
+
+</body>
+
+
+
+</html>
