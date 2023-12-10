@@ -3527,73 +3527,55 @@
 											<!-- start Simple Custom CSS and JS -->
 											<script>
 											////MOBILE MENU
-											document.addEventListener("DOMContentLoaded", function (event) {
-												const mobMenuBtn = document.querySelector('.mobile-menu-btn');
+											document.addEventListener("DOMContentLoaded", function () {
+  const mobMenuBtn = document.querySelector('.mobile-menu-btn');
 
-												if (mobMenuBtn) {
-													mobMenuBtn.addEventListener('click', function (event) {
-														setTimeout(() => {
-															let mobMenuLinks = document.querySelectorAll('.mob-menu-custom .menu-link');
-															//console.log(mobMenuLinks);
-															if (mobMenuLinks) {
-																for (let i = 0; i < mobMenuLinks.length; i++) {
-																	mobMenuLinks[i].addEventListener('click', function (event) {
-																		//console.log('111');
-																		let mobMenuDropdown = mobMenuLinks[i].querySelector(
-																			'.menu-dropdown');
-																		let arrowBack = document.querySelector('.arrow-back');
+  if (mobMenuBtn) {
+    mobMenuBtn.addEventListener('click', function () {
+      setTimeout(() => {
+        const mobMenuLinks = document.querySelectorAll('.mob-menu-custom .menu-link');
 
+        if (mobMenuLinks) {
+          mobMenuLinks.forEach(link => {
+            link.addEventListener('click', function () {
+              const mobMenuDropdown = link.querySelector('.menu-dropdown');
+              const arrowBack = document.querySelector('.arrow-back');
 
-																		if (mobMenuDropdown) {
-																			//console.dir(mobMenuDropdown);
-																			mobMenuDropdown.classList.add('active');
-																			arrowBack.classList.add('active');
+              if (mobMenuDropdown) {
+                mobMenuDropdown.classList.add('active');
+                arrowBack.classList.add('active');
 
-																			if (arrowBack) {
-																				//console.log('333');
-																				arrowBack.addEventListener('click', function (
-																					event) {
-																					mobMenuDropdown.classList.remove(
-																						'active');
-																					arrowBack.classList.remove('active');
-																				});
-																			}
-																		}
-																	});
-																}
-															}
+                if (arrowBack) {
+                  arrowBack.addEventListener('click', function () {
+                    mobMenuDropdown.classList.remove('active');
+                    arrowBack.classList.remove('active');
+                  });
+                }
+              }
+            });
+          });
+        }
+      }, 300);
+    });
+  }
+});
 
-
-
-														}, 300)
-													});
-
-												}
-											});
 
 
 											/////DESKTOP MENU BG ON SCROLL
-											document.addEventListener("DOMContentLoaded", function (event) {
-												const deskMenu = document.querySelector('.elementor-location-header .site-header');
+											document.addEventListener("DOMContentLoaded", function () {
+  const deskMenu = document.querySelector('.elementor-location-header .site-header');
 
+  if (deskMenu) {
+    function toggleHeaderBg() {
+      const shouldAddBg = window.scrollY > 110 || document.documentElement.scrollTop > 110;
+      deskMenu.classList.toggle('bg', shouldAddBg);
+    }
 
-												if (deskMenu) {
-													function headerBgOnScroll() {
-														if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110) {
-															deskMenu.classList.add('bg');
-														} else {
-															deskMenu.classList.remove('bg');
-														}
-													}
+    window.addEventListener('scroll', toggleHeaderBg);
+  }
+});
 
-													window.onscroll = function () {
-														headerBgOnScroll()
-													};
-												}
-
-
-
-											});
 											</script>
 											<!-- end Simple Custom CSS and JS -->
 
