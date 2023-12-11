@@ -1,0 +1,83 @@
+Web Page Performance Optimization Documentation - "The Yovth"
+
+Original Web Page: https://sensoskinexperts.com/
+
+Lighthouse Audit:
+
+Desktop:
+
+Performance: 96
+-FCP: 1.4s
+-LCP: 1.6s
+-CLS: 0.096
+-TBT: 110ms
+-SI: 1.6s
+
+Mobile:
+
+Performance: 89
+-FCP: 1.9s
+-LCP: 3.5s
+-CLS: 0.009
+-TBT: 60ms
+-SI: 2.6s
+
+
+Copied Website: https://vkshow.github.io/The_Yovth/
+
+Optimization Tasks Completed:
+
+-Photo compression.
+-Conversion of some images from JPG to WebP format.
+-Video compression.
+-Addition of lazy-loading for videos.
+-Addition of decoding="async" and loading="lazy" to images.
+-JS polyfill for browsers without native lazy loading support.
+-Defer attribute added to <script> tags.
+-Title addition for frames and iframes.
+-Removal of unused JS code.
+-Simplification of custom-frontend-lite.css.
+-Complete rewrite of CSS and removal of unused Elementor code.
+-Refactoring of jQuery code.
+-Reformating of custom MENU JS code.
+-Addition of async and defer where necessary in script code.
+-Lazy loading implemented for Google Maps.
+-Optimized font usage with font-display: swap and preconnect attribute.
+-Added CSS vendor prefixes for cross-browser compatibility.
+-Console error handling.
+-Minification of CSS, JS, and HTML.
+-Creation of npm Lighthouse monitoring and alerting on GitHub Pages (removed before deploying).
+-Ensured full responsiveness of the web page.
+
+-Updated Lighthouse Audit:
+
+Desktop:
+
+Performance: 100
+-FCP: 0.5s;
+-LCP: 0.7s;
+-CLS: 0.004;
+-TBT: 0ms;
+-SI: 0.6s;
+
+Mobile:
+
+Performance: 99
+-FCP: 1.4s;
+-LCP: 1.8s;
+-CLS: 0.038;
+-TBT: 40ms;
+-SI: 1.8s;
+
+Outstanding Tasks:
+
+-Refactoring of code to remove remaining unused JS and CSS code.
+-Transfer of CSS and JS code to separate files.
+-Organization of the order of loading for improved efficiency.
+
+Note: The documentation reflects comprehensive efforts to enhance web page speed, adhering to industry best practices and maintaining a meticulous approach to optimization.
+
+
+
+
+
